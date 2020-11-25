@@ -1,18 +1,21 @@
 const Discord= require('discord.js');
 const fs= require('fs');
 
+require('dotenv').config()
+
 const client= new Discord.Client();
 
 const prefix= '#';
 
 const clientLogin = process.env.CLIENT_LOGIN;
+console.log(`Token - ${clientLogin}`);
 
 client.commands= new Discord.Collection();
 
-const commandFiles= fs.readdirSync(`./commands/`).filter(file => file.endsWith('.js'));
-for(const file of commandFiles){
-    const command= require(`./commands/${file}`)
-}
+// const commandFiles= fs.readdirSync(`./commands/`).filter(file => file.endsWith('.js'));
+// for(const file of commandFiles){
+//     const command= require(`./commands/${file}`)
+// }
 
 
 client.once('ready', ()=> {
