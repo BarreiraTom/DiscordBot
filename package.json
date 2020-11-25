@@ -1,0 +1,16 @@
+{
+  "name": "discordbot",
+  "version": "1.0.0",
+  "description": "Tomás's Version of a discord bot",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "João Tomás Barreira",
+  "license": "ISC",
+  "dependencies": {
+    "discord.js": "^12.5.0",
+    "nodemon": "^2.0.6"
+  }
+}
